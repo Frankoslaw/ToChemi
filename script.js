@@ -34,7 +34,16 @@ function run()
             {
               elektrony_walencyjne.innerText = "Nie da się łatwo określić";
             }
-            ilosc_wionzani.innerText = "Do zrobienia";
+            
+            
+            if(data["elements"][i]["symbol"] == "H")
+            {
+              ilosc_wionzani.innerText = "1";
+            }
+            else
+            {
+              ilosc_wionzani.innerText = 8 - elektrony_walencyjne.innerText;
+            }
           }
         }
       });
