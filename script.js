@@ -4,4 +4,4 @@ function(data){
     network_data = data.contents;
 })
 
-console.log(network_data.length);
+console.log(network_data["elements"].length);
