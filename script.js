@@ -1,1 +1,100 @@
-console.log("działa");
+var pierwiastki = 
+{
+  h : 
+  {
+    masaAtomowa : 1,
+    masaCzonsteczkowa : 1,
+    okres : 1,
+    grupa : 1
+  },
+  li
+  na
+  k
+  rb
+  cs
+  fr
+  be
+  mg
+  ca
+  sr
+  ba
+  ra
+  sc
+  y
+  la
+  ac
+  ti
+  zr
+  hf
+  rf
+  v
+  nb
+  ta
+  db
+  cr
+  mo
+  w
+  sg
+  mn
+  tc
+  re
+  bh
+  fe
+  ru
+  os
+  hs
+  co
+  rh
+  ir
+  mt
+  ni
+  pd
+  pt
+  ds
+  cu
+  ag
+  au
+  rg
+  zn
+  cd
+  hg
+  cn
+  b
+  al
+  ga
+  in
+  ti
+  nh
+  c
+  si
+  ge
+  sn
+  pb
+  fl
+  n
+  p
+  as
+  sb
+  bi
+  mc
+  o
+  s
+  se
+  te
+  po
+  lv
+  f
+  cl
+  br
+  i
+  at
+  ts
+  he
+  ne
+  ar
+  kr
+  xe
+  rn
+  og
+};
+
