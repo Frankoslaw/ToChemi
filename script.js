@@ -22,7 +22,18 @@ function run()
             //console.log("Elektrony i protony" + data["elements"][i]["number"]);
             
             grupa.innerText = data["elements"][i]["xpos"];
-            elektrony_walencyjne.innerText = data["elements"][i]["electron_configuration"].slice(-1);
+            if(data["elements"][i]["xpos"] == "1" || data["elements"][i]["xpos"] == "2")
+            {
+                elektrony_walencyjne.innerText = data["elements"][i]["xpos"];
+            }
+            else(data["elements"][i]["xpos"] > 12 && data["elements"][i]["xpos"] < 19)
+            {
+                elektrony_walencyjne.innerText = data["elements"][i]["xpos"] - 10;
+            }
+            else
+            {
+              elektrony_walencyjne.innerText = "Nie da się łatwo określić";
+            }
             ilosc_wionzani.innerText = "Do zrobienia";
           }
         }
