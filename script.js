@@ -26,7 +26,7 @@ function run()
             {
                 elektrony_walencyjne.innerText = data["elements"][i]["xpos"];
             }
-            else(data["elements"][i]["xpos"] > 12 && data["elements"][i]["xpos"] < 19)
+            else if(data["elements"][i]["xpos"] > 12 && data["elements"][i]["xpos"] < 19)
             {
                 elektrony_walencyjne.innerText = data["elements"][i]["xpos"] - 10;
             }
