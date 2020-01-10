@@ -14,7 +14,7 @@ function run()
     else
     {
       $.getJSON( "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", function( data ) {
-        for(var i = data["elements"].length - 1;i > 0;i--)
+        for(var i = data["elements"].length - 1;i > -1;i--)
         {
           console.log(x + " | " + data["elements"][i]["symbol"]);
           if(x == data["elements"][i]["symbol"])
