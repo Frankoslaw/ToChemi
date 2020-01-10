@@ -14,8 +14,12 @@ function run()
     else
     {
       $.getJSON( "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", function( data ) {
-        console.log(x);
-        console.log(data["elements"].length);
+        console.log(x.toUpperCase());
+        
+        for(var i = data["elements"].length;i > 0;i--)
+        {
+          console.log(data["elements"][i - 1]["symbol"])
+        }
       });
     }
   }
