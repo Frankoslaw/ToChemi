@@ -14,11 +14,13 @@ function run()
     else
     {
       $.getJSON( "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", function( data ) {
-        console.log(x.toUpperCase());
-        
-        for(var i = data["elements"].length;i > 0;i--)
+        for(var i = data["elements"].length;i > 1;i--)
         {
-          console.log(data["elements"][i - 1]["symbol"])
+          if(x.toUpperCase() == data["elements"][i - 1]["symbol"])
+          {
+            console.log("Masa atomowa" + Math.round(data["elements"][i - 1]["atomic_mass"]));
+            console.log("Elektrony i protony" + data["elements"][i - 1]["number"]);
+          }
         }
       });
     }
