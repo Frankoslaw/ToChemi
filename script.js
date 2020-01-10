@@ -1,13 +1,12 @@
-var x = document.getElementById("text_box1").value;
-
 function run()
 {
-  if(x === "")
+  if(document.getElementById("text_box1") == null)
   {
     alert("Podaj dane!");
-    //tutaj dam zwrot błędu
   }else {
     $.getJSON( "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", function( data ) {
+      var x = document.getElementById("text_box1").value;
+      console.log(x);
     });
   }
 }
