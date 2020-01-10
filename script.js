@@ -18,8 +18,12 @@ function run()
         {
           if(x == data["elements"][i]["symbol"])
           {
-            console.log("Masa atomowa" + Math.round(data["elements"][i]["atomic_mass"]));
-            console.log("Elektrony i protony" + data["elements"][i]["number"]);
+            //console.log("Masa atomowa" + Math.round(data["elements"][i]["atomic_mass"]));
+            //console.log("Elektrony i protony" + data["elements"][i]["number"]);
+            
+            grupa.innerText = data["elements"][i]["xpos"];
+            elektrony_walencyjne.innerText = data["elements"][i]["electron_configuration"].slice(-1);
+            ilosc_wionzani.innerText = "Do zrobienia";
           }
         }
       });
