@@ -16,7 +16,6 @@ function run()
       $.getJSON( "https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", function( data ) {
         for(var i = data["elements"].length - 1;i > -1;i--)
         {
-          console.log(x + " | " + data["elements"][i]["symbol"]);
           if(x == data["elements"][i]["symbol"])
           {
             console.log("Masa atomowa" + Math.round(data["elements"][i]["atomic_mass"]));
